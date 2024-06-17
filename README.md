@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KIITBites
 
-## Getting Started
+**KIITBites** is an innovative online food ordering platform designed to simplify and expedite the process of ordering food from KIIT's food court. Inspired by popular food delivery services like Swiggy and Zomato, KIITBites ensures that students and faculty can conveniently order their favorite meals without the hassle of waiting in long queues. This README provides an overview of the project, including its technologies, features, and team members.
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+KIITBites aims to provide a seamless and efficient food ordering experience for the KIIT community. By leveraging modern web technologies, we offer a user-friendly interface and robust backend to handle high volumes of orders and ensure timely delivery.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **User Registration and Login:** Secure authentication system for users to register and log in.
+- **Browse Menu:** View and search through a comprehensive menu of available food items.
+- **Order Management:** Place, track, and manage food orders easily.
+- **Payment Gateway Integration:** Secure online payments for hassle-free transactions.
+- **Notifications:** Real-time updates on order status.
+- **Admin Panel:** Manage menu items, view order statistics, and handle customer queries.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies
 
-## Learn More
+### Frontend
+- **TypeScript**
+- **React**
+- **module.scss**
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
+- **Node.js**
+- **Express**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Database
+- **PostgreSQL**
+- **Prisma**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Additional Tools
+- **JWT** for authentication
+- **Stripe API** for payment processing
+- **Socket.io** for real-time notifications
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To set up the project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/kiitbites.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```sh
+    cd kiitbites
+    ```
+
+3. **Install frontend dependencies:**
+    ```sh
+    cd client
+    npm install
+    ```
+
+4. **Install backend dependencies:**
+    ```sh
+    cd ../server
+    npm install
+    ```
+
+5. **Set up the PostgreSQL database:**
+    - Ensure PostgreSQL is installed and running.
+    - Create a new database for KIITBites.
+    - Update the database URL in the Prisma schema.
+
+6. **Run database migrations:**
+    ```sh
+    npx prisma migrate dev
+    ```
+
+7. **Start the development servers:**
+    - **Frontend:**
+        ```sh
+        cd ../client
+        npm start
+        ```
+    - **Backend:**
+        ```sh
+        cd ../server
+        npm run dev
+        ```
+
+## Usage
+
+- **Frontend:** Open your browser and navigate to `http://localhost:3000` to interact with the application.
+- **Backend:** The backend server will be running at `http://localhost:5000`.
+
+<!-- ## Screenshots
+
+![Homepage](./screenshots/homepage.png)
+*Homepage: Browse and select your favorite dishes.*
+
+![Order Page](./screenshots/order-page.png)
+*Order Page: Manage your orders easily.*
+
+![Admin Panel](./screenshots/admin-panel.png)
+*Admin Panel: Administrative functionalities to manage the system.* -->
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push them to your fork.
+4. Create a pull request with a detailed description of your changes.
+
+<!-- ## Contributors
+
+- **Alice Johnson** - Project Lead
+- **Bob Smith** - Frontend Developer
+- **Carol Williams** - Backend Developer
+- **Dave Brown** - Database Administrator
+- **Eve Davis** - UX/UI Designer
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. -->
