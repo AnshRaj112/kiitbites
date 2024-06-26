@@ -19,7 +19,7 @@ KIITBites aims to provide a seamless and efficient food ordering experience for 
 
 ### Frontend
 - **TypeScript**
-- **React**
+- **Next**
 - **module.scss**
 
 ### Backend
